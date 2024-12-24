@@ -52,7 +52,7 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@Tech_VJ')
+            InlineKeyboardButton('💝 BOT SUPPORT GROUP', url='https://t.me/op_suport')
             ],[
             InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', url=f'https://t.me/{BOT_USERNAME}?start=clone')
             ],[
@@ -106,7 +106,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('No such file exist.')
+        return await message.reply('Here it is. Enjoy.')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
