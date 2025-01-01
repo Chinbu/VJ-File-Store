@@ -22,7 +22,7 @@ API_ID = int(environ.get("API_ID", "27796607"))
 API_HASH = environ.get("API_HASH", "56d68cab1e7c1a8e64ea7e77383cec84")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://i.ibb.co/f9byZgW/download-1.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7913251938').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Op_tix_bot") # without @
 PORT = environ.get("PORT", "8080")
