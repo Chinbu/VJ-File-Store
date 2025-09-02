@@ -53,13 +53,13 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 
 # Enable - True or Disable - False
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
 
 # Verify Info :-
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "9baed37f4d81fa3e7629f09f905322c80a102b6e") # shortlink domain without https://
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "link4url.com") # shortlink domain without https://
 SHORTLINK_API = environ.get("SHORTLINK_API", "9baed37f4d81fa3e7629f09f905322c80a102b6e") # shortlink api
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/tutto_rri/17") # how to open link 
 
